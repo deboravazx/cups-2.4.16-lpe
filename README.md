@@ -40,9 +40,11 @@ python3 cups_pwn.py --user lowpriv --sudoers /etc/sudoers.d/custom
 
 # After success
 sudo -i
+```
 
-🧠 How It Works
-text
+## 🧠 How It Works
+
+```text
 
 ┌─────────────────────────────────────────────────────────────────┐
 │ 1. Start fake IPP server on 127.0.0.1:9189                       │
@@ -54,28 +56,20 @@ text
 │ 7. CUPS writes the payload as root                               │
 │ 8. sudo -n id → root                                             │
 └─────────────────────────────────────────────────────────────────┘
+```
 
-🛡️ Disclaimer
+## 🛡️ Disclaimer
 
 This tool is provided for authorized security testing and educational
 purposes only. Do not use it against systems you do not own or have
 explicit permission to test. The author is not responsible for any misuse
 or damage caused by this tool.
-📚 References
+## 📚 References
 
-    GHSA-c54j-2vqw-wpwp
+- GHSA-c54j-2vqw-wpwp — verify against the official advisory before citing as confirmed.
+- CVE-2026-34990 — verify against the official CVE record before citing as confirmed.
+- Official CUPS security advisories.
 
-    CVE-2026-34990
+## 📄 License
 
-    CUPS Security Advisories
-
-📄 License
-
-MIT — see LICENSE file.
-text
-
-
-### Ficheiro 3: `LICENSE`
-
-```bash
-nano LICENSE
+MIT — see [LICENSE](LICENSE).
